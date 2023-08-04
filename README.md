@@ -6,6 +6,7 @@ With mpv-winbuild-cmake-minmal you can build Windows binaries of mpv on debian l
 
 The project has its origin: https://github.com/shinchiro/mpv-winbuild-cmake
 I wanted to understand it better and removed all the things I didn't need.
+I am only testing this project under debian bookworm others may or may not work that is up to you if you want to try it.
 
 ## Here are the things that were important to me and that are included:
 
@@ -113,7 +114,7 @@ Network:
 
 Debian linux bookworm
 
-    apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson
+    apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2
 
 Make sure you have git configured at least:
 
