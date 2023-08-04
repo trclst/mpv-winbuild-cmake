@@ -1,8 +1,7 @@
-# CMake-based MinGW-w64 Cross Toolchain
+## CMake-based MinGW-w64 Cross Toolchain
 
 This thing’s primary use is to build Windows binaries of mpv.
 
-Alternatively, you can download the builds from [here](https://sourceforge.net/projects/mpv-player-windows/files/).
 
 ## Prerequisites
 
@@ -68,48 +67,15 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
 
 
 ## Setup Build Environment
-### Manjaro / Arch Linux
 
-These packages need to be installed first before compiling mpv:
+## Debian Linux
 
-    pacman -S git gyp mercurial subversion ninja cmake meson ragel yasm nasm asciidoc enca gperf unzip p7zip gcc-multilib clang python-pip lib32-glib2
+    apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson
 
-    pip3 install rst2pdf mako jsonschema
+## Stay sure you have setup git with minimal config like (to make patching work):
 
-### Ubuntu Linux / WSL (Windows 10)
-
-    apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full
-
-    pip3 install rst2pdf meson mako jsonschema
-
-**Note:**
-
-* Use [apt-fast](https://github.com/ilikenwf/apt-fast) if apt-get is too slow.
-* It is advised to use bash over dash. Set `sudo ln -sf /bin/bash /bin/sh`. Revert back by `sudo ln -sf /bin/dash /bin/sh`.
-* On WSL platform, compiling 32bit requires qemu. Refer to [this](https://github.com/Microsoft/WSL/issues/2468#issuecomment-374904520).
-* To update package installed by pip, run `pip3 install <package> --upgrade`.
-
-### Cygwin
-
-Download Cygwin installer and run:
-
-    setup-x86_64.exe -R "C:\cygwin64" -q --packages="bash,binutils,bzip2,cygwin,gcc-core,gcc-g++,cygwin32-gcc-core,cygwin32-gcc-g++,gzip,m4,pkgconf,make,unzip,zip,diffutils,wget,git,patch,cmake,gperf,yasm,enca,asciidoc,bison,flex,gettext-devel,mercurial,python-devel,python-docutils,docbook2X,texinfo,libmpfr-devel,libgmp-devel,libmpc-devel,libtool,autoconf2.5,automake,automake1.9,libxml2-devel,libxslt-devel,meson,libunistring5"
-
-Additionally, some packages, `re2c`, `ninja`, `ragel`, `gyp`, `rst2pdf`, `nasm` need to be [installed manually](https://gist.github.com/shinchiro/705b0afcc7b6c0accffba1bedb067abf).
-
-### MSYS2
-
-Install MSYS2 and run it via `MSYS2 MSYS` shortcut.
-Don't use `MSYS2 MinGW 32-bit` or `MSYS2 MinGW 64-bit` shortcuts, that's important!
-
-These packages need to be installed first before compiling mpv:
-
-    pacman -S base-devel cmake gcc yasm nasm git mercurial subversion gyp tar gmp-devel mpc-devel mpfr-devel python zlib-devel unzip zip p7zip meson libunistring5
-
-Don't install anything from the `mingw32` and `mingw64` repositories,
-it's better to completely disable them in `/etc/pacman.conf` just to be safe.
-
-Additionally, some packages, `re2c`, `ninja`, `ragel`, `libjpeg`, `rst2pdf`, `jinja2` need to be [installed manually](https://gist.github.com/shinchiro/705b0afcc7b6c0accffba1bedb067abf).
+git config --global user.name "test"
+git config --global user.email "test@test.test"
 
 
 ## Building Software (First Time)
@@ -125,10 +91,6 @@ Once you’ve changed into that directory, run CMake, e.g.
 
 add `-DGCC_ARCH=x86-64-v3` to command-line if you want to compile gcc with new `x86-64-v3` instructions. Other value like `native`, `znver3` should work too in theory.
 
-or for 32bit:
-
-    cmake -DTARGET_ARCH=i686-w64-mingw32 -G Ninja ..
-
 First, you need to build toolchain. By default, it will be installed in `install` folder. This take ~20 minutes on my 4-core machine.
 
     ninja gcc
@@ -138,10 +100,6 @@ After it done, you're ready to build mpv and all its dependencies:
     ninja mpv
 
 This will take a while (about ~10 minutes on my machine).
-
-On **WSL2**, you might see it stuck with 100% disk usage and never finished. To fix it, build package `shaderc`, `spirv-cross` and `harfbuzz` separately first before `mpv`.
-
-The final `build64` folder's size will be around ~3GB.
 
 ## Building Software (Second Time)
 
