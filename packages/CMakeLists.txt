@@ -14,7 +14,6 @@ list(APPEND ep
     vorbis
     opus
     speex
-    libmodplug
     libvpx
     xvidcore
     libpng
