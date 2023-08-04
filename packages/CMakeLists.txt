@@ -47,7 +47,6 @@ list(APPEND ep
     brotli
     highway
     libjxl
-    angle-headers
     mujs
     spirv-headers
     spirv-tools

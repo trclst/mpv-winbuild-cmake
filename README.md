@@ -20,7 +20,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
 ## Information about packages
 
 - Git/Hg
-    - ANGLE
     - FFmpeg
     - xz
     - x264
