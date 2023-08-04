@@ -48,7 +48,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - spirv-cross
     - libxml2
     - amf-headers
-    - nvcodec-headers
     - aom
     - dav1d
     - libplacebo (with glad)

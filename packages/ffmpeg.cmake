@@ -1,7 +1,6 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
         amf-headers
-        nvcodec-headers
         bzip2
         gmp
         lame
