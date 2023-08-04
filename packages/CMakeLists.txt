@@ -48,7 +48,6 @@ list(APPEND ep
     brotli
     highway
     libjxl
-    uavs3d
     davs2
     angle-headers
     mujs

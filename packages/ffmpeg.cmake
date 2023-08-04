@@ -33,7 +33,6 @@ ExternalProject_Add(ffmpeg
         rav1e
         dav1d
         vapoursynth
-        uavs3d
         davs2
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -77,7 +76,7 @@ ExternalProject_Add(ffmpeg
         --enable-librav1e
         --enable-libdav1d
         --enable-libdavs2
-        --enable-libuavs3d
+        --disable-libuavs3d
         --enable-libxvid
         --enable-libzimg
         --enable-mbedtls
