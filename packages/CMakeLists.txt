@@ -41,7 +41,6 @@ list(APPEND ep
     amf-headers
     avisynth-headers
     nvcodec-headers
-    libmysofa
     aom
     dav1d
     libwebp
