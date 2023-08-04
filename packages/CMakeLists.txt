@@ -37,7 +37,6 @@ list(APPEND ep
     libxml2
     libvpl
     amf-headers
-    avisynth-headers
     nvcodec-headers
     aom
     dav1d
