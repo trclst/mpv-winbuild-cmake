@@ -33,7 +33,6 @@ ExternalProject_Add(ffmpeg
         rav1e
         dav1d
         vapoursynth
-        davs2
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
@@ -75,7 +74,7 @@ ExternalProject_Add(ffmpeg
         --enable-libaom
         --enable-librav1e
         --enable-libdav1d
-        --enable-libdavs2
+        --disable-libdavs2
         --disable-libuavs3d
         --enable-libxvid
         --enable-libzimg
