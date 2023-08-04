@@ -26,7 +26,6 @@ list(APPEND ep
     fribidi
     expat
     nettle
-    libarchive
     freetype2
     harfbuzz
     graphengine

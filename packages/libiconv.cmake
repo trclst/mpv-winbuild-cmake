@@ -2,7 +2,7 @@ if(CYGWIN OR MSYS)
     set(build --build=${TARGET_ARCH})
 endif()
 
-# libarchive required 3rd party iconv.pc when linking
+# libarchive required 3rd party iconv.pc when linking # TODO we removed libarchive
 set(VERSION "1.17")
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/libiconv.pc.in ${CMAKE_CURRENT_BINARY_DIR}/libiconv.pc @ONLY)
 
