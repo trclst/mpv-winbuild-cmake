@@ -29,8 +29,6 @@ list(APPEND ep
     nettle
     libarchive
     freetype2
-    libudfread
-    libbluray
     harfbuzz
     graphengine
     libzimg
