@@ -60,7 +60,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - libsrt
     - libjxl (with brotli, highway)
     - libsixel
-    - libdovi
     - libva
     - libzvbi
     - rav1e

@@ -52,7 +52,6 @@ list(APPEND ep
     vulkan
     shaderc
     glad
-    libdovi
     rav1e
     libplacebo
     libva
