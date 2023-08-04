@@ -66,7 +66,6 @@ list(APPEND ep
     readline
     sqlite
     libuv
-    libsodium
 )
 foreach(package IN LISTS ep)
     if(NOT ${SINGLE_SOURCE_LOCATION} STREQUAL "")
@@ -84,7 +83,7 @@ list(LENGTH ep ep_length)
 message(STATUS "Parsing ${ep_length} packages")
 
 # Exclude packages which dont depend on mpv when update
-list(APPEND removed "flac" "opusfile" "libopusenc" "opus-tools" "termcap" "readline" "sqlite" "libuv" "libsodium" )
+list(APPEND removed "flac" "opusfile" "libopusenc" "opus-tools" "termcap" "readline" "sqlite" "libuv" )
 list(REMOVE_ITEM repo ${removed})
 list(REMOVE_ITEM ep ${removed})
 list(TRANSFORM repo APPEND "-force-update" OUTPUT_VARIABLE update)
