@@ -21,7 +21,6 @@ ExternalProject_Add(ffmpeg
         ${ffmpeg_x265}
         xvidcore
         libxml2
-        libvpl
         libjxl
         shaderc
         libplacebo
@@ -79,7 +78,7 @@ ExternalProject_Add(ffmpeg
         --disable-libmysofa
         --disable-libssh
         --enable-libsrt
-        --enable-libvpl
+        --disable-libvpl
         --enable-libjxl
         --enable-libplacebo
         --enable-libshaderc

@@ -50,7 +50,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - libxml2
     - amf-headers
     - nvcodec-headers
-    - libvpl
     - aom
     - dav1d
     - libplacebo (with glad)

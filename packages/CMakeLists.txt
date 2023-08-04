@@ -30,7 +30,6 @@ list(APPEND ep
     libass
     mbedtls
     libxml2
-    libvpl
     amf-headers
     nvcodec-headers
     aom
