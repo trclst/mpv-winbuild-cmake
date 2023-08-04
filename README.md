@@ -23,7 +23,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - FFmpeg
     - xz
     - x264
-    - x265 (multilib)
     - uchardet
     - rubberband
     - opus

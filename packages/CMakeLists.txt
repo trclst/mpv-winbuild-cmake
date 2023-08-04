@@ -17,7 +17,6 @@ list(APPEND ep
     xvidcore
     libpng
     x264
-    x265
     libiconv
     luajit
     expat

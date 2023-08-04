@@ -14,7 +14,6 @@ ExternalProject_Add(ffmpeg
         opus
         vorbis
         x264
-        ${ffmpeg_x265}
         xvidcore
         libxml2
         libjxl
@@ -60,7 +59,7 @@ ExternalProject_Add(ffmpeg
         --enable-libvpx
         --enable-libwebp
         --enable-libx264
-        --enable-libx265
+        --disable-libx265
         --enable-libaom
         --enable-librav1e
         --enable-libdav1d
