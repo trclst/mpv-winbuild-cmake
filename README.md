@@ -27,7 +27,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - uchardet
     - rubberband
     - opus
-    - openal-soft
     - mpv
     - luajit
     - libvpx

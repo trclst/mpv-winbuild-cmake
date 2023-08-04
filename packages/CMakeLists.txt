@@ -21,7 +21,6 @@ list(APPEND ep
     x265
     libiconv
     luajit
-    openal-soft
     expat
     freetype2
     harfbuzz
