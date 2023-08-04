@@ -6,7 +6,7 @@ for i in $(cat debian/patches/series); do
 done")
 
 ExternalProject_Add(lame
-    GIT_REPOSITORY https://gitlab.com/shinchiro/lame.git
+    GIT_REPOSITORY https://github.com/trclst/lame.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
