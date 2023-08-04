@@ -57,7 +57,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - fontconfig
     - libsrt
     - libjxl (with brotli, highway)
-    - libsixel
     - libva
     - libzvbi
     - rav1e
