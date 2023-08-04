@@ -13,7 +13,6 @@ list(APPEND ep
     ogg
     vorbis
     opus
-    speex
     libvpx
     xvidcore
     libpng
