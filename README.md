@@ -44,6 +44,7 @@ This thing’s primary use is to build Windows binaries of mpv.
     - vulkan-header
     - vulkan
     - spirv-cross
+    - fribidi
     - libxml2
     - amf-headers
     - aom

@@ -17,6 +17,7 @@ list(APPEND ep
     libpng
     x264
     libiconv
+    fribidi
     luajit
     expat
     freetype2
