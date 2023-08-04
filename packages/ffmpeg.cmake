@@ -9,7 +9,6 @@ ExternalProject_Add(ffmpeg
         libsrt
         libass
         libpng
-        libbs2b
         libvpx
         libwebp
         libzimg
@@ -64,7 +63,7 @@ ExternalProject_Add(ffmpeg
         --disable-libsoxr
         --enable-libspeex
         --enable-libvorbis
-        --enable-libbs2b
+        --disable-libbs2b
         --enable-libvpx
         --enable-libwebp
         --enable-libx264

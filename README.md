@@ -57,7 +57,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - dav1d
     - libplacebo (with glad)
     - fontconfig
-    - libbs2b
     - libsrt
     - libjxl (with brotli, highway)
     - libsixel
