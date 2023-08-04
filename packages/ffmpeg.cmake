@@ -8,7 +8,6 @@ ExternalProject_Add(ffmpeg
         libpng
         libvpx
         libwebp
-        libzimg
         fontconfig
         harfbuzz
         opus
