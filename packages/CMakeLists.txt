@@ -39,7 +39,6 @@ list(APPEND ep
     libwebp
     libsdl2
     libsrt
-    libopenmpt
     brotli
     highway
     libjxl
