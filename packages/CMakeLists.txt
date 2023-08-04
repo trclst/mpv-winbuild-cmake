@@ -52,7 +52,6 @@ list(APPEND ep
     rav1e
     libplacebo
     libva
-    libzvbi
     ffmpeg
     mpv
     mpv-release

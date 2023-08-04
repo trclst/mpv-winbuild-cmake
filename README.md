@@ -57,7 +57,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - libsrt
     - libjxl (with brotli, highway)
     - libva
-    - libzvbi
     - rav1e
 
 - Zip
