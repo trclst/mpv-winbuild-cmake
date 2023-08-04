@@ -1,20 +1,62 @@
 ## CMake-based MinGW-w64 Cross Toolchain
 
-This thing’s primary use is to build Windows binaries of mpv.
+With mpv-winbuild-cmake-minmal you can build Windows binaries of mpv on debian linux.
+
+## What is this about?
+
+The project has its origin: https://github.com/shinchiro/mpv-winbuild-cmake
+I wanted to understand it better and removed all the things I didn't need.
+
+## Here are the things that were important to me and that are included:
+
+Video:
+    x264
+    vpx
+    aom
+    dav1d
+    rav1e
+
+Image:
+    webp
+    png
+    libjpeg
+    libjxl
+
+Subtitles/Interface:
+    libass
+    freetype2
+
+Audio:
+    flac
+    opus
+    lame
+
+Plugins:
+    javascript
+    lua
 
 
-## Prerequisites
+## I also like to point out things that may be important to you that are not included
 
- -  You should also install Ninja and use CMake’s Ninja build file generator.
-    It’s not only much faster than GNU Make, but also far less error-prone,
-    which is important for this project because CMake’s ExternalProject module
-    tends to generate makefiles which confuse GNU Make’s jobserver thingy.
+Network:
+    No network protocol (means no yt-dlp support)
+        curl
+        libssh
 
- -  As a build environment, any modern Linux distribution *should* work.
+    No DVD and BLURAY physical/image disk
+        libudfread
+        libbluray
+        libdvdread
+        libdvdnav
+        libdvdcss
 
--   Compiling on Cygwin / MSYS2 is supported, but it tends to be slower
-    than compiling on Linux.
+    No archive input
+        libarchive
 
+    No synth scripts
+        vapoursynth
+        davs2
+    
 
 ## Information about packages
 
@@ -69,17 +111,17 @@ This thing’s primary use is to build Windows binaries of mpv.
 
 ## Setup Build Environment
 
-## Debian Linux
+Debian linux bookworm
 
     apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson
 
-## Stay sure you have setup git with minimal config like (to make patching work):
+Make sure you have git configured at least:
 
-git config --global user.name "test"
-git config --global user.email "test@test.test"
+    git config --global user.name ""
+    git config --global user.email ""
 
 
-## Building Software (First Time)
+## Building Software
 
 To set up the build environment, create a directory to store build files in:
 
@@ -132,4 +174,6 @@ This will also build all packages that `mpv` depends on.
 
 ## Acknowledgements
 
-This project was originally created and maintained [lachs0r](https://github.com/lachs0r/mingw-w64-cmake). Since then, it heavily modified to suit my own need.
+This project was originally created and maintained [lachs0r](https://github.com/lachs0r/mingw-w64-cmake) and [shinchiro] https://github.com/shinchiro/mpv-winbuild-cmake. 
+
+Since then, it heavily modified to suit my own need.
