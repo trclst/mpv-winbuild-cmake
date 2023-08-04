@@ -6,7 +6,6 @@ ExternalProject_Add(ffmpeg
         gmp
         lame
         mbedtls
-        libssh
         libsrt
         libass
         libmodplug
@@ -85,7 +84,7 @@ ExternalProject_Add(ffmpeg
         --enable-mbedtls
         --enable-libxml2
         --disable-libmysofa
-        --enable-libssh
+        --disable-libssh
         --enable-libsrt
         --enable-libvpl
         --enable-libjxl

@@ -43,7 +43,6 @@ list(APPEND ep
     libwebp
     vapoursynth
     libbs2b
-    libssh
     libsdl2
     libsrt
     libopenmpt
