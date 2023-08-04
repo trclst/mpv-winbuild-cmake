@@ -40,7 +40,6 @@ list(APPEND ep
     aom
     dav1d
     libwebp
-    vapoursynth
     libbs2b
     libsdl2
     libsrt

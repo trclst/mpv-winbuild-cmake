@@ -32,7 +32,6 @@ ExternalProject_Add(mpv-release
         shaderc
         libplacebo
         spirv-cross
-        vapoursynth
         libsdl2
     URL ${LINK}
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -60,7 +59,7 @@ ExternalProject_Add(mpv-release
         -Dspirv-cross=enabled
         -Dvulkan=enabled
         -Dlibplacebo=enabled
-        -Dvapoursynth=enabled
+        -Dvapoursynth=disabled
         -Degl-angle=enabled
     BUILD_COMMAND ${EXEC} ninja -C <BINARY_DIR>
     INSTALL_COMMAND ""
