@@ -35,7 +35,6 @@ list(APPEND ep
     libudfread
     libbluray
     harfbuzz
-    libsoxr
     graphengine
     libzimg
     fontconfig

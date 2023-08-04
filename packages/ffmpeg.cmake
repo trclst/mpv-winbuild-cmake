@@ -13,7 +13,6 @@ ExternalProject_Add(ffmpeg
         libbluray
         libmodplug
         libpng
-        libsoxr
         libbs2b
         libvpx
         libwebp
@@ -71,7 +70,7 @@ ExternalProject_Add(ffmpeg
         --enable-libopenmpt
         --enable-libmp3lame
         --enable-libopus
-        --enable-libsoxr
+        --disable-libsoxr
         --enable-libspeex
         --enable-libvorbis
         --enable-libbs2b
