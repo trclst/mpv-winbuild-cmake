@@ -76,7 +76,7 @@ ExternalProject_Add(ffmpeg
         --disable-libdavs2
         --disable-libuavs3d
         --enable-libxvid
-        --enable-libzimg
+        --disable-libzimg
         --enable-mbedtls
         --enable-libxml2
         --disable-libmysofa

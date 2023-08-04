@@ -33,7 +33,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - libvpx
     - libwebp
     - libpng
-    - libzimg (with graphengine)
     - libunibreak
     - libass
     - lcms2
