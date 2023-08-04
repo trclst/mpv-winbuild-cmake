@@ -1,6 +1,7 @@
 ExternalProject_Add(mpv
     DEPENDS
         ffmpeg
+        fribidi
         lcms2
         libass
         libiconv

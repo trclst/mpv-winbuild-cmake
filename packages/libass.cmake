@@ -2,6 +2,7 @@ ExternalProject_Add(libass
     DEPENDS
         harfbuzz
         freetype2
+        fribidi
         libiconv
         fontconfig
         libunibreak
