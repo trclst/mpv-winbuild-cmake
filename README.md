@@ -48,7 +48,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - vulkan-header
     - vulkan
     - spirv-cross
-    - fribidi
     - nettle
     - curl
     - libxml2

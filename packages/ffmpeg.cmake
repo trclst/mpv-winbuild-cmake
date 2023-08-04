@@ -55,7 +55,7 @@ ExternalProject_Add(ffmpeg
         --enable-libass
         --disable-libbluray
         --enable-libfreetype
-        --enable-libfribidi
+        --disable-libfribidi
         --enable-libfontconfig
         --enable-libharfbuzz
         --disable-libmodplug

@@ -22,7 +22,6 @@ list(APPEND ep
     libiconv
     luajit
     openal-soft
-    fribidi
     expat
     nettle
     freetype2

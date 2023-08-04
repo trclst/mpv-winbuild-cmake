@@ -16,7 +16,6 @@ execute_process(COMMAND ${PREFIX_DIR}/src/get_latest_tag.sh
 ExternalProject_Add(mpv-release
     DEPENDS
         ffmpeg
-        fribidi
         lcms2
         libass
         libiconv
