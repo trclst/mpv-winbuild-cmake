@@ -14,7 +14,6 @@ ExternalProject_Add(ffmpeg
         opus
         vorbis
         x264
-        xvidcore
         libxml2
         libjxl
         shaderc
@@ -65,7 +64,7 @@ ExternalProject_Add(ffmpeg
         --enable-libdav1d
         --disable-libdavs2
         --disable-libuavs3d
-        --enable-libxvid
+        --disable-libxvid
         --disable-libzimg
         --disable-mbedtls
         --enable-libxml2
