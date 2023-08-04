@@ -23,7 +23,6 @@ list(APPEND ep
     luajit
     openal-soft
     expat
-    nettle
     freetype2
     harfbuzz
     fontconfig
