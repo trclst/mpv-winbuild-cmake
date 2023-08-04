@@ -28,7 +28,6 @@ list(APPEND ep
     fontconfig
     libunibreak
     libass
-    mbedtls
     libxml2
     amf-headers
     nvcodec-headers
@@ -36,7 +35,6 @@ list(APPEND ep
     dav1d
     libwebp
     libsdl2
-    libsrt
     brotli
     highway
     libjxl

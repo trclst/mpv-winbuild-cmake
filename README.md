@@ -54,7 +54,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - dav1d
     - libplacebo (with glad)
     - fontconfig
-    - libsrt
     - libjxl (with brotli, highway)
     - libva
     - rav1e
@@ -71,7 +70,6 @@ Alternatively, you can download the builds from [here](https://sourceforge.net/p
     - libiconv (1.17)
     - gmp (6.2.1)
     - libsdl2 (2.28.0)
-    - mbedtls (3.4.0)
 
 
 ## Setup Build Environment

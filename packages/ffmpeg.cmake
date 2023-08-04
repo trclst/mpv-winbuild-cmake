@@ -5,8 +5,6 @@ ExternalProject_Add(ffmpeg
         bzip2
         gmp
         lame
-        mbedtls
-        libsrt
         libass
         libpng
         libvpx
@@ -72,11 +70,11 @@ ExternalProject_Add(ffmpeg
         --disable-libuavs3d
         --enable-libxvid
         --disable-libzimg
-        --enable-mbedtls
+        --disable-mbedtls
         --enable-libxml2
         --disable-libmysofa
         --disable-libssh
-        --enable-libsrt
+        --disable-libsrt
         --disable-libvpl
         --enable-libjxl
         --enable-libplacebo
