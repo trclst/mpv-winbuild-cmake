@@ -17,7 +17,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        aom
         rav1e
         dav1d
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -58,7 +57,7 @@ ExternalProject_Add(ffmpeg
         --enable-libwebp
         --enable-libx264
         --disable-libx265
-        --enable-libaom
+        --disable-libaom
         --enable-librav1e
         --enable-libdav1d
         --disable-libdavs2

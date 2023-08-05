@@ -31,7 +31,6 @@
     - lua
 
 - Video:
-    - aom
     - dav1d
     - rav1e
     - vpx
@@ -90,7 +89,6 @@
     - fribidi
     - libxml2
     - amf-headers
-    - aom
     - dav1d
     - libplacebo (with glad)
     - fontconfig

@@ -27,7 +27,6 @@ list(APPEND ep
     libass
     libxml2
     amf-headers
-    aom
     dav1d
     libwebp
     libsdl2
