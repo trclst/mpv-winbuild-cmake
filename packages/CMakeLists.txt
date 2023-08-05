@@ -41,7 +41,6 @@ list(APPEND ep
     vulkan
     shaderc
     glad
-    rav1e
     libplacebo
     libva
     ffmpeg

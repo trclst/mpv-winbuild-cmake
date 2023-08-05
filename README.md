@@ -31,7 +31,6 @@
     - lua
 
 - Video:
-    - rav1e
     - vpx
     - x264
 
@@ -92,7 +91,6 @@
     - fontconfig
     - libjxl (with brotli, highway)
     - libva
-    - rav1e
 
 - Zip
     - expat (2.5.0)
