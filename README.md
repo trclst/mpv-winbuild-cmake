@@ -39,29 +39,28 @@ Video:
     x264
 
 
-## I also like to point out things that may be important to you that are not included
+## I also like to point out things that may be important to you that are not included:
 
-Network:
-    No network protocol (means no yt-dlp support)
-        curl
-        libssh
+No network protocol (means no yt-dlp support)
+    curl
+    libssh
 
-    No DVD and BLURAY physical/image disk
-        libudfread
-        libbluray
-        libdvdread
-        libdvdnav
-        libdvdcss
+No dvd and bluray physical/image disks
+    libudfread
+    libbluray
+    libdvdread
+    libdvdnav
+    libdvdcss
 
-    No archive input
-        libarchive
+No archives
+    libarchive
 
-    No synth scripts
-        vapoursynth
-        davs2
+No synth scripts
+    vapoursynth
+    davs2
 
 
-## Full packages list:
+## Full packages list :
 
 - Git/Hg
     - FFmpeg
@@ -118,10 +117,23 @@ Debian Bookworm
 
     apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2
 
-Make sure you have git configured at least:
+Make sure you have git configured at least (otherwise patch will not work):
 
     git config --global user.name ""
     git config --global user.email ""
+
+
+## time consumption
+
+4 cores (network download including, you will be faster)
+
+ninja gcc
+[68/68] Completed 'gcc'
+real    24m39.861s
+user    54m4.054s
+sys     3m52.794s
+
+ninja mpv
 
 
 ## Building Software

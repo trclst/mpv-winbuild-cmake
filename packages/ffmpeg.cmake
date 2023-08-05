@@ -77,9 +77,9 @@ ExternalProject_Add(ffmpeg
         --disable-libzvbi
         --disable-libaribcaption
         --disable-cuda
-        --enable-cuvid
-        --enable-nvdec
-        --enable-nvenc
+        --disable-cuvid
+        --disable-nvdec
+        --disable-nvenc
         --enable-amf
         --disable-doc
         --disable-vaapi
