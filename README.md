@@ -1,63 +1,62 @@
 ## CMake-based MinGW-w64 Cross Toolchain
 
-With mpv-winbuild-cmake-minimal you can build Windows binaries of mpv on debian bookworm linux.
+- With mpv-winbuild-cmake-minimal you can build Windows binaries of mpv on debian bookworm linux.
 
 ## What is this about?
 
-The project has its origin: https://github.com/shinchiro/mpv-winbuild-cmake
-I wanted to understand it better and removed all the things I didn't need.
-I am only testing this project under debian bookworm others may or may not work that is up to you if you want to try it.
-I like to keep it simple and don't provide binarys it's all about building it yourself.
+- The project has its origin: https://github.com/shinchiro/mpv-winbuild-cmake
+- I wanted to understand it better and removed all the things I didn't need.
+- I like to keep it simple and don't provide binarys it's all about building it yourself.
 
 
 ## Here are the things that are included (alphabetical order):
 
-Audio:
-    flac
-    lame
-    opus
+- Audio:
+    - flac
+    - lame
+    - opus
 
-Image:
-    libjpeg
-    libjxl
-    png
-    webp
+- Image:
+    - libjpeg
+    - libjxl
+    - png
+    - webp
 
-Subtitles/Interface:
-    freetype2
-    libass
+- Subtitles/Interface:
+    - freetype2
+    - libass
 
-Plugins:
-    javascript
-    lua
+- Plugins:
+    - javascript
+    - lua
 
-Video:
-    aom
-    dav1d
-    rav1e
-    vpx
-    x264
+- Video:
+    - aom
+    - dav1d
+    - rav1e
+    - vpx
+    - x264
 
 
 ## I also like to point out things that may be important to you that are not included:
 
-No network protocol (means no yt-dlp support)
-    curl
-    libssh
+- No network protocols
+    - curl
+    - libssh
 
-No dvd and bluray physical/image disks
-    libudfread
-    libbluray
-    libdvdread
-    libdvdnav
-    libdvdcss
+- No dvd and bluray physical/image disks
+    - libudfread
+    - libbluray
+    - libdvdread
+    - libdvdnav
+    - libdvdcss
 
-No archives
-    libarchive
+- No archives
+    - libarchive
 
-No synth scripts
-    vapoursynth
-    davs2
+- No synth scripts
+    - vapoursynth
+    - davs2
 
 
 ## Full packages list :
@@ -125,15 +124,15 @@ Make sure you have git configured at least (otherwise patch will not work):
 
 ## time consumption
 
-4 cores (network download including, you will be faster)
+- 4 cores (network download including, you will be little faster)
 
-ninja gcc
-[68/68] Completed 'gcc'
-real    24m39.861s
-user    54m4.054s
-sys     3m52.794s
+    - ninja gcc
+        - real    24m39.861s
+        - user    54m4.054s
+        - sys     3m52.794s
 
-ninja mpv
+    - ninja mpv
+        - TODO
 
 
 ## Building Software
