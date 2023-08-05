@@ -18,7 +18,6 @@ ExternalProject_Add(ffmpeg
         shaderc
         libplacebo
         rav1e
-        dav1d
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
@@ -59,7 +58,7 @@ ExternalProject_Add(ffmpeg
         --disable-libx265
         --disable-libaom
         --enable-librav1e
-        --enable-libdav1d
+        --disable-libdav1d
         --disable-libdavs2
         --disable-libuavs3d
         --disable-libxvid

@@ -31,7 +31,6 @@
     - lua
 
 - Video:
-    - dav1d
     - rav1e
     - vpx
     - x264
@@ -89,7 +88,6 @@
     - fribidi
     - libxml2
     - amf-headers
-    - dav1d
     - libplacebo (with glad)
     - fontconfig
     - libjxl (with brotli, highway)
