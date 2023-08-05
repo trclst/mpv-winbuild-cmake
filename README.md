@@ -1,40 +1,42 @@
 ## CMake-based MinGW-w64 Cross Toolchain
 
-With mpv-winbuild-cmake-minmal you can build Windows binaries of mpv on debian linux.
+With mpv-winbuild-cmake-minimal you can build Windows binaries of mpv on debian bookworm linux.
 
 ## What is this about?
 
 The project has its origin: https://github.com/shinchiro/mpv-winbuild-cmake
 I wanted to understand it better and removed all the things I didn't need.
 I am only testing this project under debian bookworm others may or may not work that is up to you if you want to try it.
+I like to keep it simple and don't provide binarys it's all about building it yourself.
 
-## Here are the things that were important to me and that are included:
 
-Video:
-    x264
-    vpx
-    aom
-    dav1d
-    rav1e
-
-Image:
-    webp
-    png
-    libjpeg
-    libjxl
-
-Subtitles/Interface:
-    libass
-    freetype2
+## Here are the things that are included (alphabetical order):
 
 Audio:
     flac
-    opus
     lame
+    opus
+
+Image:
+    libjpeg
+    libjxl
+    png
+    webp
+
+Subtitles/Interface:
+    freetype2
+    libass
 
 Plugins:
     javascript
     lua
+
+Video:
+    aom
+    dav1d
+    rav1e
+    vpx
+    x264
 
 
 ## I also like to point out things that may be important to you that are not included
@@ -57,9 +59,9 @@ Network:
     No synth scripts
         vapoursynth
         davs2
-    
 
-## Information about packages
+
+## Full packages list:
 
 - Git/Hg
     - FFmpeg
@@ -112,7 +114,7 @@ Network:
 
 ## Setup Build Environment
 
-Debian linux bookworm
+Debian Bookworm
 
     apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2
 
