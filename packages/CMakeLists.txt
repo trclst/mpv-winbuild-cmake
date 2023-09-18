@@ -41,6 +41,7 @@ list(APPEND ep
     vulkan
     shaderc
     glad
+    fast_float
     libplacebo
     libva
     ffmpeg
