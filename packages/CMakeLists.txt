@@ -31,7 +31,6 @@ list(APPEND ep
     libsdl2
     brotli
     glslang
-    glad
     fast_float
     libva
     ffmpeg
