@@ -71,7 +71,6 @@
     - libjpeg
     - fribidi
     - libxml2
-    - amf-headers
     - fontconfig
     - libva
 

@@ -1,6 +1,5 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
-        amf-headers
         bzip2
         gmp
         lame
@@ -70,7 +69,7 @@ ExternalProject_Add(ffmpeg
         --disable-cuvid
         --disable-nvdec
         --disable-nvenc
-        --enable-amf
+        --disable-amf
         --disable-doc
         --disable-vaapi
         --disable-vdpau

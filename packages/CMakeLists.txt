@@ -22,7 +22,6 @@ list(APPEND ep
     libunibreak
     libass
     libxml2
-    amf-headers
     libsdl2
     brotli
     libva
