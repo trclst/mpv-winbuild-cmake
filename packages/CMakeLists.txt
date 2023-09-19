@@ -30,8 +30,6 @@ list(APPEND ep
     libwebp
     libsdl2
     brotli
-    highway
-    mujs
     glslang
     glad
     fast_float

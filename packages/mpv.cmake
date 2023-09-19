@@ -10,7 +10,6 @@ ExternalProject_Add(mpv
         luajit
         rubberband
         uchardet
-        mujs
         libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
     SOURCE_DIR ${SOURCE_LOCATION}

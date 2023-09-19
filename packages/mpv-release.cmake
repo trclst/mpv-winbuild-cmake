@@ -25,7 +25,6 @@ ExternalProject_Add(mpv-release
         luajit
         rubberband
         uchardet
-        mujs
         libsdl2
     URL ${LINK}
     SOURCE_DIR ${SOURCE_LOCATION}

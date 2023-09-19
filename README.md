@@ -77,7 +77,6 @@
     - freetype2
     - flac
     - opus-tools
-    - mujs
     - libjpeg
     - fribidi
     - libxml2
