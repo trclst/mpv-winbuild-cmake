@@ -81,8 +81,6 @@
     - mujs
     - libjpeg
     - shaderc (with spirv-headers, spirv-tools, glslang)
-    - vulkan-header
-    - vulkan
     - spirv-cross
     - fribidi
     - libxml2

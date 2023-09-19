@@ -37,8 +37,6 @@ list(APPEND ep
     spirv-tools
     spirv-cross
     glslang
-    vulkan-header
-    vulkan
     shaderc
     glad
     fast_float
