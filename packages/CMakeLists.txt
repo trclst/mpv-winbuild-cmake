@@ -10,7 +10,6 @@ list(APPEND ep
     lcms2
     lame
     ogg
-    vorbis
     libpng
     x264
     libiconv

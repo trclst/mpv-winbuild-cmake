@@ -8,7 +8,6 @@ ExternalProject_Add(ffmpeg
         libpng
         fontconfig
         harfbuzz
-        vorbis
         x264
         libxml2
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -43,7 +42,7 @@ ExternalProject_Add(ffmpeg
         --disable-libopus
         --disable-libsoxr
         --disable-libspeex
-        --enable-libvorbis
+        --disable-libvorbis
         --disable-libbs2b
         --disable-libvpx
         --disable-libwebp
