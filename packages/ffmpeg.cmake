@@ -10,7 +10,6 @@ ExternalProject_Add(ffmpeg
         libwebp
         fontconfig
         harfbuzz
-        opus
         vorbis
         x264
         libxml2
@@ -43,7 +42,7 @@ ExternalProject_Add(ffmpeg
         --disable-libmodplug
         --disable-libopenmpt
         --enable-libmp3lame
-        --enable-libopus
+        --disable-libopus
         --disable-libsoxr
         --disable-libspeex
         --enable-libvorbis

@@ -14,7 +14,6 @@
 - Audio:
     - flac
     - lame
-    - opus
 
 - Image:
     - libjpeg
@@ -63,7 +62,6 @@
     - x264
     - uchardet
     - rubberband
-    - opus
     - mpv
     - luajit
     - libvpx
@@ -76,7 +74,6 @@
     - harfbuzz
     - freetype2
     - flac
-    - opus-tools
     - libjpeg
     - fribidi
     - libxml2
@@ -89,7 +86,6 @@
     - bzip (1.0.8)
     - zlib (1.2.13)
     - vorbis (1.3.7)
-    - ogg (1.3.5)
     - lzo (2.10)
     - libiconv (1.17)
     - gmp (6.2.1)
