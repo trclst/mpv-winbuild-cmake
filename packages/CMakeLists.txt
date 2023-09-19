@@ -12,7 +12,6 @@ list(APPEND ep
     lame
     ogg
     vorbis
-    libvpx
     libpng
     x264
     libiconv

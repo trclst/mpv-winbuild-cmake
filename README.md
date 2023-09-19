@@ -29,7 +29,6 @@
     - lua
 
 - Video:
-    - vpx
     - x264
 
 
@@ -64,7 +63,6 @@
     - rubberband
     - mpv
     - luajit
-    - libvpx
     - libwebp
     - libpng
     - libunibreak
