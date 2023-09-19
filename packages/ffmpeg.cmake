@@ -16,7 +16,6 @@ ExternalProject_Add(ffmpeg
         libxml2
         libjxl
         shaderc
-        libplacebo
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
