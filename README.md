@@ -24,7 +24,6 @@
     - libass
 
 - Plugins:
-    - javascript
     - lua
 
 - Video:
