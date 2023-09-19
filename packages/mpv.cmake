@@ -12,7 +12,6 @@ ExternalProject_Add(mpv
         uchardet
         mujs
         shaderc
-        libplacebo
         spirv-cross
         libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
@@ -42,7 +41,7 @@ ExternalProject_Add(mpv
         -Dopenal=disabled
         -Dspirv-cross=enabled
         -Dvulkan=disabled
-        -Dlibplacebo=enabled
+        -Dlibplacebo=disabled
         -Dvapoursynth=disabled
         -Degl-angle=disabled
     BUILD_COMMAND ${EXEC} ninja -C <BINARY_DIR>

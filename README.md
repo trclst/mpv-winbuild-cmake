@@ -85,7 +85,6 @@
     - fribidi
     - libxml2
     - amf-headers
-    - libplacebo (with glad)
     - fontconfig
     - libjxl (with brotli, highway)
     - libva

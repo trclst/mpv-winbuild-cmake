@@ -69,7 +69,7 @@ ExternalProject_Add(ffmpeg
         --disable-libsrt
         --disable-libvpl
         --enable-libjxl
-        --enable-libplacebo
+        --disable-libplacebo
         --enable-libshaderc
         --disable-libzvbi
         --disable-libaribcaption

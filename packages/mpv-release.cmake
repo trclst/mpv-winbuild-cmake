@@ -27,7 +27,6 @@ ExternalProject_Add(mpv-release
         uchardet
         mujs
         shaderc
-        libplacebo
         spirv-cross
         libsdl2
     URL ${LINK}
@@ -55,7 +54,7 @@ ExternalProject_Add(mpv-release
         -Dopenal=disabled
         -Dspirv-cross=enabled
         -Dvulkan=disabled
-        -Dlibplacebo=enabled
+        -Dlibplacebo=disabled
         -Dvapoursynth=disabled
         -Degl-angle=disabled
     BUILD_COMMAND ${EXEC} ninja -C <BINARY_DIR>
