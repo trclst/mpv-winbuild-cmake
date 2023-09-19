@@ -33,11 +33,7 @@ list(APPEND ep
     highway
     libjxl
     mujs
-    spirv-headers
-    spirv-tools
-    spirv-cross
     glslang
-    shaderc
     glad
     fast_float
     libva

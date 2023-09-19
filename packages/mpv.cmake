@@ -11,8 +11,6 @@ ExternalProject_Add(mpv
         rubberband
         uchardet
         mujs
-        shaderc
-        spirv-cross
         libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -39,7 +37,7 @@ ExternalProject_Add(mpv
         -Drubberband=enabled
         -Dlcms2=enabled
         -Dopenal=disabled
-        -Dspirv-cross=enabled
+        -Dspirv-cross=disabled
         -Dvulkan=disabled
         -Dlibplacebo=disabled
         -Dvapoursynth=disabled

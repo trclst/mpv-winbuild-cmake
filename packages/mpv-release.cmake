@@ -26,8 +26,6 @@ ExternalProject_Add(mpv-release
         rubberband
         uchardet
         mujs
-        shaderc
-        spirv-cross
         libsdl2
     URL ${LINK}
     SOURCE_DIR ${SOURCE_LOCATION}
@@ -52,7 +50,7 @@ ExternalProject_Add(mpv-release
         -Drubberband=enabled
         -Dlcms2=enabled
         -Dopenal=disabled
-        -Dspirv-cross=enabled
+        -Dspirv-cross=disabled
         -Dvulkan=disabled
         -Dlibplacebo=disabled
         -Dvapoursynth=disabled

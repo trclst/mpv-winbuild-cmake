@@ -15,7 +15,6 @@ ExternalProject_Add(ffmpeg
         x264
         libxml2
         libjxl
-        shaderc
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
@@ -69,7 +68,7 @@ ExternalProject_Add(ffmpeg
         --disable-libvpl
         --enable-libjxl
         --disable-libplacebo
-        --enable-libshaderc
+        --disable-libshaderc
         --disable-libzvbi
         --disable-libaribcaption
         --disable-cuda

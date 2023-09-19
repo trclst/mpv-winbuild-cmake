@@ -80,8 +80,6 @@
     - opus-tools
     - mujs
     - libjpeg
-    - shaderc (with spirv-headers, spirv-tools, glslang)
-    - spirv-cross
     - fribidi
     - libxml2
     - amf-headers
