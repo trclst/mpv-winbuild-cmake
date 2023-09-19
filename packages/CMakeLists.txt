@@ -27,7 +27,6 @@ list(APPEND ep
     amf-headers
     libsdl2
     brotli
-    fast_float
     libva
     ffmpeg
     mpv
