@@ -19,7 +19,6 @@ list(APPEND ep
     freetype2
     harfbuzz
     fontconfig
-    libunibreak
     libass
     libxml2
     libsdl2

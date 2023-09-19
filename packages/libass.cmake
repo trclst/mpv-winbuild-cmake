@@ -5,7 +5,6 @@ ExternalProject_Add(libass
         fribidi
         libiconv
         fontconfig
-        libunibreak
     GIT_REPOSITORY https://github.com/libass/libass.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"

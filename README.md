@@ -61,7 +61,6 @@
     - mpv
     - luajit
     - libpng
-    - libunibreak
     - libass
     - lcms2
     - lame
