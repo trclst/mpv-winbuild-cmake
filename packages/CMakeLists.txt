@@ -30,7 +30,6 @@ list(APPEND ep
     libwebp
     libsdl2
     brotli
-    glslang
     fast_float
     libva
     ffmpeg
