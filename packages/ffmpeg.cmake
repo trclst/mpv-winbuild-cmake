@@ -14,7 +14,6 @@ ExternalProject_Add(ffmpeg
         vorbis
         x264
         libxml2
-        libjxl
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
@@ -66,7 +65,7 @@ ExternalProject_Add(ffmpeg
         --disable-libssh
         --disable-libsrt
         --disable-libvpl
-        --enable-libjxl
+        --disable-libjxl
         --disable-libplacebo
         --disable-libshaderc
         --disable-libzvbi
@@ -82,7 +81,6 @@ ExternalProject_Add(ffmpeg
         --disable-videotoolbox
         --disable-decoder=libaom_av1
         --disable-network
-        "--extra-libs='-lstdc++'" # needs by libjxl and shaderc
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
     LOG_DOWNLOAD 1 LOG_UPDATE 1 LOG_CONFIGURE 1 LOG_BUILD 1 LOG_INSTALL 1

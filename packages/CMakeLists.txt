@@ -31,7 +31,6 @@ list(APPEND ep
     libsdl2
     brotli
     highway
-    libjxl
     mujs
     glslang
     glad

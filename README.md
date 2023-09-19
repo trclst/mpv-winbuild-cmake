@@ -18,7 +18,6 @@
 
 - Image:
     - libjpeg
-    - libjxl
     - png
     - webp
 
@@ -84,7 +83,6 @@
     - libxml2
     - amf-headers
     - fontconfig
-    - libjxl (with brotli, highway)
     - libva
 
 - Zip
