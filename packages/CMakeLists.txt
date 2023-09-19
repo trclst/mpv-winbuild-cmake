@@ -25,7 +25,6 @@ list(APPEND ep
     libass
     libxml2
     amf-headers
-    libwebp
     libsdl2
     brotli
     fast_float

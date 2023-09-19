@@ -18,7 +18,6 @@
 - Image:
     - libjpeg
     - png
-    - webp
 
 - Subtitles/Interface:
     - freetype2
@@ -63,7 +62,6 @@
     - rubberband
     - mpv
     - luajit
-    - libwebp
     - libpng
     - libunibreak
     - libass

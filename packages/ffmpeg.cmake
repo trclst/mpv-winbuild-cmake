@@ -6,7 +6,6 @@ ExternalProject_Add(ffmpeg
         lame
         libass
         libpng
-        libwebp
         fontconfig
         harfbuzz
         vorbis
@@ -47,7 +46,7 @@ ExternalProject_Add(ffmpeg
         --enable-libvorbis
         --disable-libbs2b
         --disable-libvpx
-        --enable-libwebp
+        --disable-libwebp
         --enable-libx264
         --disable-libx265
         --disable-libaom
