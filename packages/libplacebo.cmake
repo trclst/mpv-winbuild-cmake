@@ -1,8 +1,7 @@
 get_property(src_glad TARGET glad PROPERTY _EP_SOURCE_DIR)
 get_property(src_fast_float TARGET fast_float PROPERTY _EP_SOURCE_DIR)
 ExternalProject_Add(libplacebo
-    DEPENDS
-        vulkan
+    DEPENDS        
         shaderc
         lcms2
         glad
@@ -23,7 +22,7 @@ ExternalProject_Add(libplacebo
         --cross-file=${MESON_CROSS}
         --buildtype=release
         --default-library=static
-        -Dvulkan-registry='${MINGW_INSTALL_PREFIX}/share/vulkan/registry/vk.xml'
+        -Dvulkan=disabled
         -Ddemos=false
     BUILD_COMMAND ${EXEC} ninja -C <BINARY_DIR>
     INSTALL_COMMAND ${EXEC} ninja -C <BINARY_DIR> install

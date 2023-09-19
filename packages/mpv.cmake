@@ -11,7 +11,6 @@ ExternalProject_Add(mpv
         rubberband
         uchardet
         mujs
-        vulkan
         shaderc
         libplacebo
         spirv-cross
@@ -42,7 +41,7 @@ ExternalProject_Add(mpv
         -Dlcms2=enabled
         -Dopenal=disabled
         -Dspirv-cross=enabled
-        -Dvulkan=enabled
+        -Dvulkan=disabled
         -Dlibplacebo=enabled
         -Dvapoursynth=disabled
         -Degl-angle=disabled
