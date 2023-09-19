@@ -58,7 +58,6 @@
     - xz
     - x264
     - uchardet
-    - rubberband
     - mpv
     - luajit
     - libpng

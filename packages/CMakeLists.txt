@@ -4,7 +4,6 @@ list(APPEND ep
     xz
     lzo
     uchardet
-    rubberband
     zlib
     bzip2
     libjpeg

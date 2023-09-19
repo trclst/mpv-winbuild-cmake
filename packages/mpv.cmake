@@ -8,7 +8,6 @@ ExternalProject_Add(mpv
         libjpeg
         libpng
         luajit
-        rubberband
         uchardet
         libsdl2
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
@@ -33,7 +32,7 @@ ExternalProject_Add(mpv
         -Dlibbluray=disabled
         -Ddvdnav=disabled
         -Duchardet=enabled
-        -Drubberband=enabled
+        -Drubberband=disabled
         -Dlcms2=enabled
         -Dopenal=disabled
         -Dspirv-cross=disabled
