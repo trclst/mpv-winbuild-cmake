@@ -26,63 +26,26 @@ ExternalProject_Add(ffmpeg
         --enable-version3
         --enable-nonfree
         --enable-postproc
-        --disable-everything
-        --enable-encoder=libx264
-        --enable-decoder=h264
-        --enable-muxer=h264,mp4
-        --enable-demuxer=h264
-        --enable-parser=h264
-        --enable-protocol=file
+        --disable-network
         --disable-avisynth
         --disable-vapoursynth
+        --disable-everything
+        --enable-encoder=libx264,ac3,aac,libmp3lame,png,srt
+        --enable-decoder=h264,ac3,aac,eac3,flac,mp3,png,srt
+        --enable-muxer=h264,mp4,mpegts,ac3,dts,eac3,flac,matroska,mp3,srt
+        --enable-demuxer=h264,aac,ac3,ass,dts,dtshd,matroska,mp3,mpegts,srt
+        --enable-parser=h264,aac,ac3,flac,png
+        --enable-protocol=file
+        --enable-libxml2
         --enable-gmp
         --enable-libass
-        --disable-libbluray
         --enable-libfreetype
         --enable-libfribidi
         --enable-libfontconfig
         --enable-libharfbuzz
-        --disable-libmodplug
-        --disable-libopenmpt
         --enable-libmp3lame
-        --disable-libopus
-        --disable-libsoxr
-        --disable-libspeex
-        --disable-libvorbis
-        --disable-libbs2b
-        --disable-libvpx
-        --disable-libwebp
         --enable-libx264
-        --disable-libx265
-        --disable-libaom
-        --disable-librav1e
-        --disable-libdav1d
-        --disable-libdavs2
-        --disable-libuavs3d
-        --disable-libxvid
-        --disable-libzimg
-        --disable-mbedtls
-        --enable-libxml2
-        --disable-libmysofa
-        --disable-libssh
-        --disable-libsrt
-        --disable-libvpl
-        --disable-libjxl
-        --disable-libplacebo
-        --disable-libshaderc
-        --disable-libzvbi
-        --disable-libaribcaption
-        --disable-cuda
-        --disable-cuvid
-        --disable-nvdec
-        --disable-nvenc
-        --disable-amf
-        --disable-doc
-        --disable-vaapi
-        --disable-vdpau
-        --disable-videotoolbox
-        --disable-decoder=libaom_av1
-        --disable-network
+
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
     LOG_DOWNLOAD 1 LOG_UPDATE 1 LOG_CONFIGURE 1 LOG_BUILD 1 LOG_INSTALL 1
