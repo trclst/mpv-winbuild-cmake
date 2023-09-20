@@ -1,5 +1,5 @@
 ExternalProject_Add(libxml2
-    GIT_REPOSITORY https://gitlab.gnome.org/GNOME/libxml2.git
+    GIT_REPOSITORY https://github.com/GNOME/libxml2.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""

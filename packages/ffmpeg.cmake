@@ -26,6 +26,13 @@ ExternalProject_Add(ffmpeg
         --enable-version3
         --enable-nonfree
         --enable-postproc
+        --disable-everything
+        --enable-encoder=libx264
+        --enable-decoder=h264
+        --enable-muxer=h264,mp4
+        --enable-demuxer=h264
+        --enable-parser=h264
+        --enable-protocol=file
         --disable-avisynth
         --disable-vapoursynth
         --enable-gmp
