@@ -45,7 +45,7 @@ ExternalProject_Add(ffmpeg
         --enable-libharfbuzz
         --enable-libmp3lame
         --enable-libx264
-        --enable-flac
+        --enable-libflac
 
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
