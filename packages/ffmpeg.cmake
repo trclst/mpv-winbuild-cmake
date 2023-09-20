@@ -30,11 +30,11 @@ ExternalProject_Add(ffmpeg
         --disable-avisynth
         --disable-vapoursynth
         --disable-everything
-        --enable-encoder=libx264,ac3,aac,libmp3lame,png,srt,flac,mp2
-        --enable-decoder=h264,ac3,aac,eac3,flac,mp3,png,srt,flac,mp2,mjpeg
+        --enable-encoder=libx264,ac3,aac,libmp3lame,png,srt,flac,mp2,dca
+        --enable-decoder=h264,ac3,aac,eac3,flac,mp3,png,srt,flac,mp2,mjpeg,dca
         --enable-muxer=h264,mp4,mpegts,ac3,dts,eac3,flac,matroska,mp3,srt,mp2,ogg
         --enable-demuxer=h264,aac,ac3,ass,dts,dtshd,matroska,mp3,mpegts,srt,flac,ogg,image2
-        --enable-parser=h264,aac,ac3,flac,png
+        --enable-parser=h264,aac,ac3,flac,png,dca
         --enable-protocol=file
         --enable-zlib
         --enable-libxml2
