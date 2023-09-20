@@ -32,8 +32,8 @@ ExternalProject_Add(ffmpeg
         --disable-everything
         --enable-encoder=libx264,ac3,aac,libmp3lame,png,srt,flac,mp2
         --enable-decoder=h264,ac3,aac,eac3,flac,mp3,png,srt,flac,mp2
-        --enable-muxer=h264,mp4,mpegts,ac3,dts,eac3,flac,matroska,mp3,srt,mp2
-        --enable-demuxer=h264,aac,ac3,ass,dts,dtshd,matroska,mp3,mpegts,srt,flac
+        --enable-muxer=h264,mp4,mpegts,ac3,dts,eac3,flac,matroska,mp3,srt,mp2,ogg
+        --enable-demuxer=h264,aac,ac3,ass,dts,dtshd,matroska,mp3,mpegts,srt,flac,ogg
         --enable-parser=h264,aac,ac3,flac,png
         --enable-protocol=file
         --enable-libxml2
@@ -45,7 +45,6 @@ ExternalProject_Add(ffmpeg
         --enable-libharfbuzz
         --enable-libmp3lame
         --enable-libx264
-        --enable-libflac
 
     BUILD_COMMAND ${MAKE}
     INSTALL_COMMAND ${MAKE} install
