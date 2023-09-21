@@ -20,7 +20,6 @@ list(APPEND ep
     harfbuzz
     fontconfig
     libass
-    libxml2
     libsdl2
     brotli
     libva

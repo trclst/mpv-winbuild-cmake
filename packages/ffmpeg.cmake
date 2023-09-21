@@ -8,7 +8,6 @@ ExternalProject_Add(ffmpeg
         fontconfig
         harfbuzz
         x264
-        libxml2
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
@@ -37,7 +36,7 @@ ExternalProject_Add(ffmpeg
         --enable-parser=h264,aac,ac3,flac,png,dca
         --enable-protocol=file
         --enable-zlib
-        --enable-libxml2
+        --disable-libxml2
         --enable-gmp
         --enable-libass
         --enable-libfreetype

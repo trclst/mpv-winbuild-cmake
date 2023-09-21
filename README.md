@@ -69,7 +69,6 @@
     - flac
     - libjpeg
     - fribidi
-    - libxml2
     - fontconfig
     - libva
 
