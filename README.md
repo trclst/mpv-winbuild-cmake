@@ -1,6 +1,6 @@
 ## CMake-based MinGW-w64 Cross Toolchain
 
-- With mpv-winbuild-cmake-minimal you can build Windows binaries of mpv on debian bookworm linux.
+- With mpv-winbuild-cmake-minimal you can build static windows binaries of mpv on debian bookworm linux.
 
 ## What is this about?
 
@@ -13,7 +13,7 @@
 
 - Audio:
     - flac
-    - lame
+    - lame (mp3)
 
 - Image:
     - libjpeg
@@ -22,8 +22,9 @@
 - Subtitles/Interface:
     - freetype2
     - libass
+    - srt
 
-- Plugins:
+- mpv Plugins:
     - lua
 
 - Video:
@@ -71,8 +72,7 @@
     - fribidi
     - fontconfig
     - libva
-
-- Zip
+    
     - expat (2.5.0)
     - bzip (1.0.8)
     - zlib (1.2.13)
@@ -96,7 +96,7 @@ Make sure you have git configured at least (otherwise patch will not work):
 
 ## time consumption
 
-- 4 cores (network download including, you will be little faster)
+- 4 cores (network download including, you will be faster)
 
     - ninja gcc
         - real    24m39.861s
@@ -160,6 +160,4 @@ This will also build all packages that `mpv` depends on.
 
 ## Acknowledgements
 
-This project was originally created and maintained [lachs0r](https://github.com/lachs0r/mingw-w64-cmake) and [shinchiro] https://github.com/shinchiro/mpv-winbuild-cmake. 
-
-Since then, it heavily modified to suit my own need.
+This project was originally created and maintained [lachs0r](https://github.com/lachs0r/mingw-w64-cmake) and [shinchiro] https://github.com/shinchiro/mpv-winbuild-cmake.
