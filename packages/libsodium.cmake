@@ -1,6 +1,6 @@
 ExternalProject_Add(libsodium
-    URL https://github.com/jedisct1/libsodium/archive/1.0.18.tar.gz
-    URL_HASH SHA256=d59323c6b712a1519a5daf710b68f5e7fde57040845ffec53850911f10a5d4f4
+    URL https://github.com/jedisct1/libsodium/archive/1.0.19.tar.gz
+    URL_HASH SHA256=1d281a8a5e299a38e5c16ff60f293bba0796dc0fda8e49bc582d4bc1935572ed
     DOWNLOAD_DIR ${SOURCE_LOCATION}
     CONFIGURE_COMMAND ${EXEC} <SOURCE_DIR>/autogen.sh && CONF=1 <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}
