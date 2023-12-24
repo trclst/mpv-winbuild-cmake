@@ -43,7 +43,6 @@ list(APPEND ep
     libvpl
     amf-headers
     nvcodec-headers
-    libmysofa
     aom
     xxhash
     dav1d

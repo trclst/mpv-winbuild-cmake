@@ -143,7 +143,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libudfread
     - libunibreak
     - libass
-    - libmysofa
     - lcms2
     - lame
     - harfbuzz
