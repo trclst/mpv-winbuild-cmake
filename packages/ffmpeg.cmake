@@ -24,7 +24,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        libzvbi
         libaribcaption
         aom
         rav1e
@@ -88,7 +87,7 @@ ExternalProject_Add(ffmpeg
         --enable-libjxl
         --enable-libplacebo
         --enable-libshaderc
-        --enable-libzvbi
+        --disable-libzvbi
         --enable-libaribcaption
         --enable-cuda-llvm
         --enable-cuvid

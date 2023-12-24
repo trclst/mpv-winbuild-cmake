@@ -176,7 +176,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libsixel
     - libdovi
     - libva
-    - libzvbi
     - rav1e
     - libaribcaption
     - zlib (zlib-ng)
