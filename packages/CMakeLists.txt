@@ -28,7 +28,6 @@ list(APPEND ep
     libxml2
     brotli
     freetype2
-    libudfread
     harfbuzz
     graphengine
     libzimg

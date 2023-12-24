@@ -137,7 +137,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libwebp
     - libpng
     - libzimg (with graphengine)
-    - libudfread
     - libunibreak
     - libass
     - lcms2
