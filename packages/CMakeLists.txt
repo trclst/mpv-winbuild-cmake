@@ -16,7 +16,6 @@ list(APPEND ep
     vorbis
     opus
     speex
-    libmodplug
     libvpx
     xvidcore
     game-music-emu

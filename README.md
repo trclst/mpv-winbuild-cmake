@@ -175,7 +175,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libssh
     - libsrt
     - libjxl (with brotli, highway)
-    - libmodplug
     - uavs3d
     - davs2
     - libsixel

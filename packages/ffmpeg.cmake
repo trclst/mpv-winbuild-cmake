@@ -9,7 +9,6 @@ ExternalProject_Add(ffmpeg
         libssh
         libsrt
         libass
-        libmodplug
         libpng
         libsoxr
         libbs2b
@@ -65,7 +64,7 @@ ExternalProject_Add(ffmpeg
         --enable-libfribidi
         --enable-libfontconfig
         --enable-libharfbuzz
-        --enable-libmodplug
+        --disable-libmodplug
         --enable-libopenmpt
         --enable-libmp3lame
         --enable-lcms2
