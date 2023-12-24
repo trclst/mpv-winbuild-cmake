@@ -28,7 +28,6 @@ ExternalProject_Add(ffmpeg
         rav1e
         dav1d
         uavs3d
-        davs2
         rubberband
         libva
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -73,7 +72,7 @@ ExternalProject_Add(ffmpeg
         --enable-libaom
         --enable-librav1e
         --enable-libdav1d
-        --enable-libdavs2
+        --disable-libdavs2
         --enable-libuavs3d
         --enable-libxvid
         --enable-libzimg

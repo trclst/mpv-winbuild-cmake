@@ -165,7 +165,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libsrt
     - libjxl (with brotli, highway)
     - uavs3d
-    - davs2
     - libsixel
     - libdovi
     - libva
