@@ -142,7 +142,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libdvdnav
     - libdvdcss
     - libudfread
-    - libbluray
     - libunibreak
     - libass
     - libmysofa

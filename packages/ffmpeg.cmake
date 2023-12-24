@@ -9,7 +9,6 @@ ExternalProject_Add(ffmpeg
         libssh
         libsrt
         libass
-        libbluray
         libmodplug
         libpng
         libsoxr
@@ -61,7 +60,7 @@ ExternalProject_Add(ffmpeg
         --disable-avisynth
         --disable-vapoursynth
         --enable-libass
-        --enable-libbluray
+        --disable-libbluray
         --enable-libfreetype
         --enable-libfribidi
         --enable-libfontconfig
