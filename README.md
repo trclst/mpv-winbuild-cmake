@@ -9,7 +9,7 @@ This thing’s primary use is to build Windows binaries of mpv.
 
 These packages need to be installed first before compiling mpv:
 
-    apt-get install curl build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2 rst2pdf        
+    apt-get install python-is-python3 curl build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2 rst2pdf        
 
 
 ## Compiling with GCC
