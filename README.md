@@ -2,63 +2,14 @@
 
 This thing’s primary use is to build Windows binaries of mpv.
 
-Alternatively, you can download the builds from [here](https://sourceforge.net/projects/mpv-player-windows/files/).
-
-## Prerequisites
-
- -  You should also install Ninja and use CMake’s Ninja build file generator.
-    It’s not only much faster than GNU Make, but also far less error-prone,
-    which is important for this project because CMake’s ExternalProject module
-    tends to generate makefiles which confuse GNU Make’s jobserver thingy.
-
- -  As a build environment, any modern Linux distribution *should* work.
-
--   Compiling on Cygwin / MSYS2 is supported, but it tends to be slower
-    than compiling on Linux.
-
 ## Setup Build Environment
-### Manjaro / Arch Linux
+
+
+### Debian 12 Bookworm
 
 These packages need to be installed first before compiling mpv:
 
-    pacman -S git gyp mercurial subversion ninja cmake meson ragel yasm nasm asciidoc enca gperf unzip p7zip gcc-multilib clang lld libc++ libc++abi python-pip curl lib32-glib2
-
-    pip3 install rst2pdf mako jsonschema
-
-### Ubuntu Linux / WSL (Windows 10)
-
-    apt-get install build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang lld libc++1 libc++abi1 libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full curl
-
-    pip3 install rst2pdf meson mako jsonschema
-
-**Note:**
-
-* Use [apt-fast](https://github.com/ilikenwf/apt-fast) if apt-get is too slow.
-* It is advised to use bash over dash. Set `sudo ln -sf /bin/bash /bin/sh`. Revert back by `sudo ln -sf /bin/dash /bin/sh`.
-* On WSL platform, compiling 32bit requires qemu. Refer to [this](https://github.com/Microsoft/WSL/issues/2468#issuecomment-374904520).
-* To update package installed by pip, run `pip3 install <package> --upgrade`.
-
-### Cygwin
-
-Download Cygwin installer and run:
-
-    setup-x86_64.exe -R "C:\cygwin64" -q --packages="bash,binutils,bzip2,cygwin,gcc-core,gcc-g++,cygwin32-gcc-core,cygwin32-gcc-g++,gzip,m4,pkgconf,make,unzip,zip,diffutils,wget,git,patch,cmake,gperf,yasm,enca,asciidoc,bison,flex,gettext-devel,mercurial,python-devel,python-docutils,docbook2X,texinfo,libmpfr-devel,libgmp-devel,libmpc-devel,libtool,autoconf2.5,automake,automake1.9,libxml2-devel,libxslt-devel,meson,libunistring5"
-
-Additionally, some packages, `re2c`, `ninja`, `ragel`, `gyp`, `rst2pdf`, `nasm` need to be [installed manually](https://gist.github.com/shinchiro/705b0afcc7b6c0accffba1bedb067abf).
-
-### MSYS2
-
-Install MSYS2 and run it via `MSYS2 MSYS` shortcut.
-Don't use `MSYS2 MinGW 32-bit` or `MSYS2 MinGW 64-bit` shortcuts, that's important!
-
-These packages need to be installed first before compiling mpv:
-
-    pacman -S base-devel cmake gcc yasm nasm git mercurial subversion gyp tar gmp-devel mpc-devel mpfr-devel python zlib-devel unzip zip p7zip meson libunistring5
-
-Don't install anything from the `mingw32` and `mingw64` repositories,
-it's better to completely disable them in `/etc/pacman.conf` just to be safe.
-
-Additionally, some packages, `re2c`, `ninja`, `ragel`, `libjpeg`, `rst2pdf`, `jinja2` need to be [installed manually](https://gist.github.com/shinchiro/705b0afcc7b6c0accffba1bedb067abf).
+    apt-get install curl build-essential checkinstall bison flex gettext git mercurial subversion ninja-build gyp cmake yasm nasm automake pkgconf libtool libtool-bin gcc-multilib g++-multilib clang libgmp-dev libmpfr-dev libmpc-dev libgcrypt-dev gperf ragel texinfo autopoint re2c asciidoc python3-pip docbook2x unzip p7zip-full meson python3-jinja2 rst2pdf        
 
 
 ## Compiling with GCC
@@ -82,9 +33,8 @@ Enter `build64` folder and build toolchain once. By default, it will be installe
     ninja gcc      # build gcc only once (take around ~20 minutes)
     ninja mpv      # build mpv and all its dependencies
 
-On **WSL2**, you might see it stuck with 100% disk usage and never finished. See [below](#wsl-workaround).
-
 The final `build64` folder's size will be around ~3GB.
+
 
 ## Building Software (Second Time)
 
@@ -95,6 +45,18 @@ To build mpv for a second time:
 After that, build mpv as usual:
 
     ninja mpv
+
+
+## VA-API Driver
+
+To use VA-API Win32:
+
+    ninja mesa
+
+`vaon12_drv_video.dll` will be generated in `install/$TARGET_ARCH/bin`
+
+this is a layered driver running on top of Direct3D 12 API. Deployment instructions have been [documented by Microsoft](https://devblogs.microsoft.com/directx/video-acceleration-api-va-api-now-available-on-windows/#how-do-i-get-it).
+
 
 ## Compiling with Clang
 
@@ -139,6 +101,7 @@ If you've changed `GCC_ARCH` option, you need to run:
 
 to update flags which will pass on gcc, g++ and etc.
 
+
 ## Available Commands
 
 | Commands                   | Description |
@@ -154,6 +117,7 @@ to update flags which will pass on gcc, g++ and etc.
 | ninja package-force-update | Update a package. Only git repo will be updated. |
 
 `package` is package's name found in `packages` folder.
+
 
 ## Information about packages
 
@@ -244,38 +208,7 @@ to update flags which will pass on gcc, g++ and etc.
     - ~~libressl (3.1.5)~~
 
 
-### WSL workaround
 
-Place the file on specified location to limit ram & cpu usage to avoid getting stuck while building mpv.
-
-    # /etc/wsl.conf
-    [interop]
-    #enabled=false
-    appendWindowsPath=false
-
-    [automount]
-    enabled = true
-    options = "metadata"
-    mountFsTab = false
-
-    [user]
-    default=<user>
-    ---------------------------------------
-    # C:\Users\<UserName>\.wslconfig
-    [wsl2]
-    memory=4GB
-    swap=0
-    pageReporting=false
-
-### VA-API Driver
-
-To use VA-API Win32:
-
-    ninja mesa
-
-`vaon12_drv_video.dll` will be generated in `install/$TARGET_ARCH/bin`
-
-this is a layered driver running on top of Direct3D 12 API. Deployment instructions have been [documented by Microsoft](https://devblogs.microsoft.com/directx/video-acceleration-api-va-api-now-available-on-windows/#how-do-i-get-it).
 
 ## Acknowledgements
 
