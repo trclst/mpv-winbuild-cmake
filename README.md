@@ -16,12 +16,12 @@ These packages need to be installed first before compiling mpv:
 
 Example:
 
-    cmake -DTARGET_ARCH=x86_64-w64-mingw32 \
-    -DGCC_ARCH=x86-64-v3 \
-    -DALWAYS_REMOVE_BUILDFILES=ON \
-    -DSINGLE_SOURCE_LOCATION="/home/user/packages" \
-    -DRUSTUP_LOCATION="/home/user/install_rustup" \
-    -G Ninja -B build64 -S mpv-winbuild-cmake
+cmake -DTARGET_ARCH=x86_64-w64-mingw32 \
+-DGCC_ARCH=native \
+-DALWAYS_REMOVE_BUILDFILES=ON \
+-DSINGLE_SOURCE_LOCATION="/home/user/packages" \
+-DRUSTUP_LOCATION="/home/user/install_rustup" \
+-G Ninja -B build64 -S mpv-winbuild-cmake-minimal
 
 This cmake command will create `build64` folder for `x86_64-w64-mingw32`. Set `-DTARGET_ARCH=i686-w64-mingw32` for compiling 32-bit.
 
