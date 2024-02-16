@@ -25,7 +25,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        vapoursynth
         rubberband
         libva
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -45,7 +44,7 @@ ExternalProject_Add(ffmpeg
         --enable-version3
         --enable-postproc
         --enable-avisynth
-        --enable-vapoursynth
+        --disable-vapoursynth
         --enable-libass
         --disable-libbluray
         --enable-libfreetype

@@ -40,7 +40,6 @@ list(APPEND ep
     nvcodec-headers
     xxhash
     libwebp
-    vapoursynth
     openssl
     libsrt
     highway
