@@ -210,7 +210,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libjxl (with brotli, highway)
     - libmodplug
     - uavs3d
-    - davs2
     - libsixel
     - libdovi
     - libva
