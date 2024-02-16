@@ -26,7 +26,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        rav1e
         vapoursynth
         uavs3d
         rubberband
@@ -70,7 +69,7 @@ ExternalProject_Add(ffmpeg
         --enable-libx264
         --enable-libx265
         --disable-libaom
-        --enable-librav1e
+        --disable-librav1e
         --disable-libdav1d
         --disable-libdavs2
         --enable-libuavs3d

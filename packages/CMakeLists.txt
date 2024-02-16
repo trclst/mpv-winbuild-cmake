@@ -58,7 +58,6 @@ list(APPEND ep
     shaderc
     glad
     fast_float
-    rav1e
     libplacebo
     libva
     ffmpeg
