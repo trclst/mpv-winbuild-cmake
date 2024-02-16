@@ -45,7 +45,6 @@ list(APPEND ep
     libsrt
     highway
     libjxl
-    uavs3d
     angle-headers
     spirv-headers
     spirv-tools

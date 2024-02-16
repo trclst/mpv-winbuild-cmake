@@ -193,7 +193,6 @@ to update flags which will pass on gcc, g++ and etc.
     - fontconfig
     - libsrt
     - libjxl (with brotli, highway)
-    - uavs3d
     - libva
     - zlib (zlib-ng)
     - zstd

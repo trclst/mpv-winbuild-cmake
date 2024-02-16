@@ -26,7 +26,6 @@ ExternalProject_Add(ffmpeg
         shaderc
         libplacebo
         vapoursynth
-        uavs3d
         rubberband
         libva
     GIT_REPOSITORY https://github.com/FFmpeg/FFmpeg.git
@@ -71,7 +70,7 @@ ExternalProject_Add(ffmpeg
         --disable-librav1e
         --disable-libdav1d
         --disable-libdavs2
-        --enable-libuavs3d
+        --disable-libuavs3d
         --enable-libxvid
         --enable-libzimg
         --enable-openssl
