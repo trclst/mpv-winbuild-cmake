@@ -163,7 +163,6 @@ to update flags which will pass on gcc, g++ and etc.
     - uchardet
     - rubberband
     - opus
-    - openal-soft
     - mpv
     - luajit
     - libvpx

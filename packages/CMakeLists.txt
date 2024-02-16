@@ -55,7 +55,6 @@ list(APPEND ep
     vulkan-header
     vulkan
     libsdl2
-    openal-soft
     shaderc
     glad
     fast_float
