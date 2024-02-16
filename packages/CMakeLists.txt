@@ -60,7 +60,6 @@ list(APPEND ep
     vulkan
     libsdl2
     openal-soft
-    libopenmpt
     shaderc
     glad
     fast_float
