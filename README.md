@@ -201,7 +201,6 @@ to update flags which will pass on gcc, g++ and etc.
     - megasdk (with termcap, readline, cryptopp, sqlite, libuv, libsodium)
     - libplacebo (with glad, fast_float, xxhash)
     - fontconfig
-    - libbs2b
     - libssh
     - libsrt
     - libjxl (with brotli, highway)
