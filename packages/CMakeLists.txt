@@ -59,7 +59,6 @@ list(APPEND ep
     libjxl
     uavs3d
     angle-headers
-    mujs
     spirv-headers
     spirv-tools
     spirv-cross
