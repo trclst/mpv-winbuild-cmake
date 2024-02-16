@@ -16,7 +16,6 @@ list(APPEND ep
     vorbis
     opus
     libvpx
-    xvidcore
     libpng
     x264
     x265
