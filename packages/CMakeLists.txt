@@ -32,7 +32,6 @@ list(APPEND ep
     freetype2
     libudfread
     harfbuzz
-    libsoxr
     graphengine
     libzimg
     fontconfig
