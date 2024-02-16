@@ -204,7 +204,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libmodplug
     - uavs3d
     - libsixel
-    - libdovi
     - libva
     - libzvbi
     - rav1e
