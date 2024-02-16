@@ -182,7 +182,6 @@ to update flags which will pass on gcc, g++ and etc.
     - lcms2
     - lame
     - harfbuzz
-    - game-music-emu
     - freetype2
     - flac
     - opus-tools
