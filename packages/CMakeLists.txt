@@ -50,7 +50,6 @@ list(APPEND ep
     nvcodec-headers
     libmysofa
     xxhash
-    dav1d
     libwebp
     vapoursynth
     libbs2b
