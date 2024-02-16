@@ -42,7 +42,6 @@ list(APPEND ep
     amf-headers
     avisynth-headers
     nvcodec-headers
-    libmysofa
     xxhash
     libwebp
     vapoursynth
