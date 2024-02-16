@@ -185,7 +185,6 @@ to update flags which will pass on gcc, g++ and etc.
     - curl
     - libxml2
     - amf-headers
-    - avisynth-headers
     - nvcodec-headers
     - libvpl
     - libplacebo (with glad, fast_float, xxhash)

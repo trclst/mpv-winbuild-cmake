@@ -1,7 +1,6 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
         amf-headers
-        avisynth-headers
         nvcodec-headers
         bzip2
         lcms2
@@ -41,7 +40,6 @@ ExternalProject_Add(ffmpeg
         --enable-gpl
         --enable-version3
         --enable-postproc
-        --enable-avisynth
         --disable-vapoursynth
         --enable-libass
         --disable-libbluray
