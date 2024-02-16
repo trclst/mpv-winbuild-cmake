@@ -26,7 +26,6 @@ ExternalProject_Add(ffmpeg
         libjxl
         shaderc
         libplacebo
-        libzvbi
         rav1e
         vapoursynth
         uavs3d
@@ -87,7 +86,7 @@ ExternalProject_Add(ffmpeg
         --enable-libjxl
         --enable-libplacebo
         --enable-libshaderc
-        --enable-libzvbi
+        --disable-libzvbi
         --disable-libaribcaption
         --enable-cuda-llvm
         --enable-cuvid

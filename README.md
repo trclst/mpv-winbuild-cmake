@@ -198,7 +198,6 @@ to update flags which will pass on gcc, g++ and etc.
     - libjxl (with brotli, highway)
     - uavs3d
     - libva
-    - libzvbi
     - rav1e
     - zlib (zlib-ng)
     - zstd
