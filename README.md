@@ -201,7 +201,6 @@ to update flags which will pass on gcc, g++ and etc.
     - openssl
     - mesa
     - libsdl2
-    - speex
     - vorbis
     - ogg
     - bzip2
