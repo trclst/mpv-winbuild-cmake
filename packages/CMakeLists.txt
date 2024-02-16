@@ -78,7 +78,6 @@ list(APPEND ep
     sqlite
     libuv
     libsodium
-    megasdk
     mesa
 )
 foreach(package IN LISTS ep)
@@ -97,7 +96,7 @@ list(LENGTH ep ep_length)
 message(STATUS "Parsing ${ep_length} packages")
 
 # Exclude packages which dont depend on mpv when update
-list(APPEND removed "flac" "opusfile" "libopusenc" "opus-tools" "termcap" "readline" "cryptopp" "sqlite" "libuv" "libsodium" "megasdk" "curl" "libressl" "mbedtls" "nettle" "gmp" "mesa")
+list(APPEND removed "flac" "opusfile" "libopusenc" "opus-tools" "termcap" "readline" "cryptopp" "sqlite" "libuv" "libsodium" "curl" "libressl" "mbedtls" "nettle" "gmp" "mesa")
 list(REMOVE_ITEM repo ${removed})
 list(REMOVE_ITEM ep ${removed})
 list(TRANSFORM repo APPEND "-force-update" OUTPUT_VARIABLE update)

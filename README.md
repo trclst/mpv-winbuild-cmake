@@ -191,7 +191,6 @@ to update flags which will pass on gcc, g++ and etc.
     - avisynth-headers
     - nvcodec-headers
     - libvpl
-    - megasdk (with termcap, readline, cryptopp, sqlite, libuv, libsodium)
     - libplacebo (with glad, fast_float, xxhash)
     - fontconfig
     - libsrt
