@@ -1,6 +1,6 @@
 ExternalProject_Add(libuv
-    URL https://github.com/libuv/libuv/archive/v1.40.0.tar.gz
-    URL_HASH SHA256=70fe1c9ba4f2c509e8166c0ca2351000237da573bb6c82092339207a9715ba6b
+    URL https://github.com/libuv/libuv/archive/v1.48.0.tar.gz
+    URL_HASH SHA256=8c253adb0f800926a6cbd1c6576abae0bc8eb86a4f891049b72f9e5b7dc58f33
     DOWNLOAD_DIR ${SOURCE_LOCATION}
     CONFIGURE_COMMAND ${EXEC} <SOURCE_DIR>/autogen.sh && CONF=1 <SOURCE_DIR>/configure
         --host=${TARGET_ARCH}
