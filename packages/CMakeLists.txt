@@ -45,7 +45,6 @@ list(APPEND ep
     libwebp
     vapoursynth
     openssl
-    libssh
     libsrt
     highway
     libjxl
